@@ -57,7 +57,7 @@ function Admin() {
                 function callback1(resp){
                     resp.json().then(callback2);
                 }
-                fetch("http://localhost:5000/admin/login", {
+                fetch("https://techno-admin.vercel.app/admin/login", {
                     method:"POST",
                     body: JSON.stringify({
                         email: email,

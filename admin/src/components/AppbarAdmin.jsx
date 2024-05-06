@@ -31,7 +31,7 @@ function AppbarAdmin() {
 
    
 
-     fetch("http://localhost:5000/admin/me", {
+     fetch("https://techno-admin.vercel.app/admin/me", {
         method: "GET",
         headers: {
           "Authorization": "Bearer " +  localStorage.getItem("token")

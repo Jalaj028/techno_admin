@@ -6,7 +6,7 @@ const AdminLogin = () => {
   const fetchData = async () => {
     try {
       //const response = await fetch('https://technoforum.onrender.com/api/get-token');
-      const response = await fetch('https://localhost:5000/api/get-token');
+      const response = await fetch('https://techno-admin.vercel.app/api/get-token');
       const data = await response.json();
       setData(data);
     } catch (error) {
@@ -21,7 +21,7 @@ const AdminLogin = () => {
   const handleGenerateToken = async () => {
     try {
       //const response = await fetch('https://technoforum.onrender.com/api/generate-token', {
-       const response = await fetch('https://localhost:5000/api/generate-token', {
+       const response = await fetch('https://techno-admin.vercel.app/api/generate-token', {
      
       method: 'POST',
         headers: {

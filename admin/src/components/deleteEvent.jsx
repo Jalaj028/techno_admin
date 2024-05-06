@@ -11,7 +11,7 @@ function Delete() {
    
 
     useEffect(() => {
-        fetch("http://localhost:5000/admin/events", {
+        fetch("https://techno-admin.vercel.app/admin/events", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " +  localStorage.getItem("token")
@@ -97,7 +97,7 @@ function EventCard(props) {
          onClick={ async() => {
             alert("Event will be permanently deleted")
             try{
-                await fetch("http://localhost:5000/admin/events/" + event._id, {
+                await fetch("https://techno-admin.vercel.app/admin/events/" + event._id, {
                     method:"DELETE", 
                     headers: {
                         "Content-type": "application/json",

@@ -13,7 +13,7 @@ function Event() {
    
 
     useEffect(() => {
-        fetch("http://localhost:5000/admin/events", {
+        fetch("https://techno-admin.vercel.app/admin/events", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " +  localStorage.getItem("token")
@@ -171,7 +171,7 @@ function UpdateCard(props) {
 
                 
             }
-            fetch("http://localhost:5000/admin/events/" + event._id, {
+            fetch("https://techno-admin.vercel.app/admin/events/" + event._id, {
                 method: "PUT",
                 body: JSON.stringify({
                     title: title,

@@ -103,7 +103,7 @@ function AddEvent () {
           variant="contained"
           style={{backgroundColor: "white", color: "black"}}
           onClick={() => {
-            fetch("http://localhost:5000/admin/events",{
+            fetch("https://techno-admin.vercel.app/admin/events",{
               method: "POST",
               body: JSON.stringify({
                 title: title,

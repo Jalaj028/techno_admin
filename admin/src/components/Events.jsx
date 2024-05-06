@@ -9,7 +9,7 @@ function Events () {
     const[events, setEvents] = useState([]);
    
     useEffect(() => {
-        fetch("http://localhost:5000/admin/events", {
+        fetch("https://techno-admin.vercel.app/admin/events", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " +  localStorage.getItem("token")
