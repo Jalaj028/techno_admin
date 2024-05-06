@@ -13,7 +13,7 @@ const { Event } = require("./db/index");
 app.use(bodyParser.json());
 app.use(cors(
     {
-        origin:["https://techno-admin-xzj6.vercel.app/"],
+        origin:["https://techno-admin-xzj6.vercel.app"],
         methods:["GET", "POST"],
         credentials: true
     }
