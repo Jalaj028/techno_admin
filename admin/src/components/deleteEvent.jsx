@@ -1,6 +1,6 @@
 import { Button, Card, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import { Navigate, useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 
 function Delete() {
     let { eventId } = useParams();
@@ -8,7 +8,6 @@ function Delete() {
 
     const [events, setEvents] = useState([]);
     
-   
 
     useEffect(() => {
         fetch("https://techno-admin.vercel.app/admin/events", {
@@ -71,6 +70,8 @@ function Delete() {
     // )
 }
 function EventCard(props) {
+   const navigate = useNavigate();
+
     console.log("hi there from event card")
     const event = props.event;
     return <div style={{display: "flex", justifyContent: "center"}}>
@@ -106,7 +107,9 @@ function EventCard(props) {
     
                 })
              alert("event deleted successfully");
-             window.location = "/events";
+            //  window.location = "/events";
+            navigate("/events");
+
 
           
 

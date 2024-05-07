@@ -1,6 +1,6 @@
 import { Card } from "@mui/material";
 import { useEffect, useState } from "react"
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate, useNavigate } from "react-router-dom";
 import { Typography, TextField, Button } from "@mui/material";
 import Loading from "./Loading"
 
@@ -144,6 +144,7 @@ function UpdateCard(props) {
         variant="contained"
         onClick={() => {
             function callback2(data) {
+                const navigate = useNavigate();
                 let updatedEvents = [];
                 for (let i = 0; i<props.events.length; i++) {
                     
@@ -159,7 +160,8 @@ function UpdateCard(props) {
                             Banner: banner
                         })
                         alert("event updated")
-                        window.location = "/events"
+                        // window.location = "/events"
+                        navigate("/events");
                     } else {
                         updatedEvents.push(props.events[i]);
                     }

@@ -1,6 +1,7 @@
 
 import { Button, Card, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 function AddEvent () {
@@ -11,6 +12,7 @@ function AddEvent () {
     const[time, setTime] = useState("");
     const[venue, setVenue] = useState("");
     const[link, setLink] = useState("");
+    const navigate = useNavigate();
     return (
         <div>
            <div 
@@ -121,7 +123,9 @@ function AddEvent () {
             }).then((resp) => {
               return resp.json().then((data) => {
                 { alert("event Added")}
-                window.location = "/events"
+                // window.location = "/events"
+                navigate("/events");
+                
               })
             }).catch((error)=> {res.send(error.message)})
           }}
