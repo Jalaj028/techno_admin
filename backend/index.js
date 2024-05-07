@@ -27,6 +27,10 @@ app.use(cors(
 app.use("/admin", adminRouter);
 app.use("/user", clientRouter);
 
+app.get("/", (req, res) => {
+    console.log("Hello World");
+    res.send("Hello, testing")
+})
 // app.post("/events", authenticateJwt, async (req, res) => {
 //     const event = new Event(req.body);
 //     await event.save();
