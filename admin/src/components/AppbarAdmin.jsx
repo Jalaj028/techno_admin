@@ -92,10 +92,10 @@ function AppbarAdmin() {
             backgroundColor: 'white',
         }}
          onClick={() => {
-            window.location = "/addEvent"
+            //window.location = "/addEvent"
             
             // this is a lame method , this refreshes page every time ,window.location = "/signup"
-              //navigate("/signup")
+              navigate("/addEvent")
          }}
          ><strong>Add Event</strong></Button>
 
@@ -107,10 +107,12 @@ function AppbarAdmin() {
             backgroundColor: 'white',
         }}
          onClick={() => {
-            window.location = "/events"
+            // window.location = "/events"
             
             // this is a lame method , this refreshes page every time ,window.location = "/signup"
-              //navigate("/signup")
+              navigate("/events")
+
+
          }}
          ><strong>All Events</strong></Button>
 
