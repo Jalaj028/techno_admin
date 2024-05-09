@@ -7,7 +7,7 @@ import { useState } from "react";
 import AdminLogin from "./AdminLogin";
 import AddEvent from "./addEvent";
 import Events from "./Events";
-
+import "../index.css";
 
 function AppbarAdmin() {
    const navigate = useNavigate();
@@ -136,17 +136,18 @@ function AppbarAdmin() {
     </div>
     </div>
      <div
-     style={{
-         display:"flex",
-         justifyContent:"center",
-        //  border: "2px solid black", 
-        //  backgroundColor:"#00000011"
-        borderBottom:"2px solid black",
-        borderTop:"2px solid black"
-     }}
+     className="bias"
+    //  style={{
+    //      display:"flex",
+    //      justifyContent:"center",
+    //     //  border: "2px solid black", 
+    //     //  backgroundColor:"#00000011"
+    //     borderBottom:"2px solid black",
+    //     borderTop:"2px solid black"
+    //  }}
      >
-        <img src={"/birla-logo.png"} alt="logo" width={"9%"} />
-     <h2>Birla Institute of Applied Sciences<br></br>
+        <img className="bias-logo" src={"/birla-logo.png"} alt="logo"  />
+     <h2  className="bias-heading">Birla Institute of Applied Sciences<br></br>
          बिरला इंस्टीट्यूट ऑफ़ अप्लाइड साइंसेस<br></br>
          Bhimtal, Distt: Nainital, Uttarakhand- 263136</h2>
 
@@ -193,18 +194,19 @@ function AppbarAdmin() {
     </div>
     <div>
     <div
-     style={{
-         display:"flex",
-         justifyContent:"center",
-        //  border: "2px solid black"
-        // marginTop:"20px", 
-        borderBottom:"2px solid black",
-        borderTop:"2px solid black"
+     className="bias"
+    //  style={{
+    //      display:"flex",
+    //      justifyContent:"center",
+    //     //  border: "2px solid black"
+    //     // marginTop:"20px", 
+    //     borderBottom:"2px solid black",
+    //     borderTop:"2px solid black"
 
-     }}
+    //  }}
      >
-        <img src={"/birla-logo.png"} alt="logo" width={"9%"} />
-     <h2>Birla Institute of Applied Sciences<br></br>
+        <img className="bias-logo" src={"/birla-logo.png"} alt="logo" />
+     <h2 className="bias-heading">Birla Institute of Applied Sciences<br></br>
          बिरला इंस्टीट्यूट ऑफ़ अप्लाइड साइंसेस<br></br>
          Bhimtal, Distt: Nainital, Uttarakhand- 263136</h2>
 

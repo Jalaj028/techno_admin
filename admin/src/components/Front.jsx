@@ -18,7 +18,7 @@ function Front() {
                 {/* <Typography variant="h3">Technoforum <br></br>Admin</Typography>
                 <br /><br />
                 <Typography variant="h4">Let's Learn, Imagine and Build</Typography> */}
-                <h1>Technoforum Admin</h1>
+                <h1 className="heading">Technoforum Admin</h1>
     
                 <h3> Admin panel for the technoforum website, from here the authorized admin 
                     can get, update, add, and delete the content in the main user side website
