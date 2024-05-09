@@ -62,7 +62,11 @@ info@birlainstitute.co.in
                     textAlign:"center"
 
                     
-                }}><h2>Weather </h2></div>
+                }}><h2>Developed by:</h2>
+                <a href="https://www.linkedin.com/in/jalaj-bhatt-b871a1235" style={{color:"#000000"}}>Jalaj Bhatt</a><br></br>
+                <a href="https://www.linkedin.com/in/jalaj-bhatt-b871a1235" style={{color:"#000000"}}>Ayaan Khan</a>
+                
+                </div>
         </Grid>
         </Grid>
         
