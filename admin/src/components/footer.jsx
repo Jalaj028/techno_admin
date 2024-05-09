@@ -22,7 +22,7 @@ function Footer() {
                
                 //  border: "2px solid black",
                     // textDecoration: "underline",
-                    textAlign:"left",
+                    textAlign:"center",
                     padding: 10
                     // marginRight:"10px"
                 }}><h2>Reach Us:</h2>
@@ -46,7 +46,7 @@ info@birlainstitute.co.in
                 //     marginTop: 0, 
                 //  border: "2px solid black",
                     textDecoration: "underline",
-                    textAlign:"left"
+                    textAlign:"center"
 
                     // marginRight:"10px"
                 }}><h2>Time:</h2>
@@ -59,7 +59,7 @@ info@birlainstitute.co.in
                 //     marginTop: 0, 
                 //  border: "2px solid black",
                     textDecoration: "underline",
-                    // textAlign:"center"
+                    textAlign:"center"
 
                     
                 }}><h2>Weather </h2></div>
