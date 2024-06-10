@@ -9,7 +9,7 @@ function Front() {
                 <div style={{
                 //     marginTop: 0, 
                 //  border: "2px solid black",
-                    textDecoration: "underline",
+                    // textDecoration: "underline",
                     marginRight:"10px",
                     textAlign:"left",
                     marginTop:"5vw",
@@ -20,7 +20,7 @@ function Front() {
                 <Typography variant="h4">Let's Learn, Imagine and Build</Typography> */}
                 <h1 className="heading">Technoforum Admin</h1>
     
-                <h3> Admin panel for the technoforum website, from here the authorized admin 
+                <h3 style={{fontFamily:"'Courier New', Courier, monospace"}}> Admin panel for the technoforum website, from here the authorized admin 
                     can get, update, add, and delete the content in the main user side website
                 </h3>
                 </div>
