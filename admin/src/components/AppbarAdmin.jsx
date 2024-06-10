@@ -47,7 +47,7 @@ function AppbarAdmin() {
         display: "flex",
         justifyContent: "space-between",
         padding: 10,
-        backgroundColor: "#00000011"
+        backgroundColor: "#B5C0D0"
 
     }}>
         <div
@@ -174,12 +174,17 @@ function AppbarAdmin() {
     <div style={{
         display: "flex",
         justifyContent: "space-between",
-        paddingTop: 10,
-        backgroundColor:"#00000011"
+        alignItems:"center",
+        // paddingTop: 10,
+        backgroundColor:"#B5C0D0"
     }}>
 
-        <div>
-        <Typography variant="h6">Technoforum</Typography>
+        <div
+        onClick={() => {
+            navigate("/");
+        }}
+        >
+        <Typography variant="h6" style={{fontWeight:"bold"}} >Technoforum</Typography>
         </div>
         <div>
         <Button
