@@ -13,9 +13,9 @@ function Footer() {
   const date = new Date();
 
     return(
-        <div style={{ height:"15vw", marginTop:"3vw", backgroundColor:"#00000011"}}>
+        <div style={{ marginTop:"3vw", backgroundColor:"#B5C0D0"}}>
             <Grid container style={{
-            textAlign:"center"
+            textAlign:"center",  color:"#000000"
         }}>
             <Grid item xs={12} md={4} lg={4}>
                 <div style={{
@@ -60,8 +60,6 @@ info@birlainstitute.co.in
                 //  border: "2px solid black",
                     textDecoration: "underline",
                     textAlign:"center"
-
-                    
                 }}><h2>Developed by:</h2>
                 <a href="https://www.linkedin.com/in/jalaj-bhatt-b871a1235" style={{color:"#000000"}}>Jalaj Bhatt</a><br></br>
                 <a href="https://www.linkedin.com/in/jalaj-bhatt-b871a1235" style={{color:"#000000"}}>Ayaan Khan</a>
